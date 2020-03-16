@@ -12,7 +12,10 @@ class EmailAddressParser
     @email = email
   end 
   
-  def parse(email)
+  def parses_csv_emails(email)
     
   end 
+  
+  def
+  
 end 
