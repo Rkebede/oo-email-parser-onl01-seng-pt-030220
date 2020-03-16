@@ -15,10 +15,10 @@ class EmailAddressParser
   
   def parse
     split_emails = @emails.split(",")
-    if split_emails.length == 1 
-      split_emails = @emails.split(" ")
-    end 
-    split_emails.map { |email| email.gsub(/\s+/,"")}
+    # if split_emails.length == 1 
+    #   split_emails = @emails.split(" ")
+    # end 
+    # split_emails.map { |email| email.gsub(/\s+/,"")}
   end 
   
 end 
