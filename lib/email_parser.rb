@@ -7,15 +7,14 @@
 class EmailAddressParser
   
   attr_accessor :email 
+  @@email = [ ]
   
   def initalize(email) 
-    @email = email
+    @@email = @email
   end 
   
-  def parses_csv_emails(email)
-    
+  def parse(email) 
+    @email
   end 
-  
-  def
   
 end 
