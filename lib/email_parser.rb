@@ -15,7 +15,8 @@ class EmailAddressParser
   
   def parse
    split_email = @emails.split(",")
-   
+   if split_email.length == 1 
+     @email.gsub(/\s+/,"")
   end 
   
 end 
