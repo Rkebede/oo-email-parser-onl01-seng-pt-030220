@@ -9,14 +9,14 @@ class EmailAddressParser
   attr_accessor :email 
   
   
-  def initialize(email) 
-    @emails = email
+  def initialize(emails) 
+    @emails = emails
   end 
   
   def parse
     split_emails = @emails.split(",")
     if split_emails.length == 1 
-      split_emails = @email.split(" ")
+      split_emails = @emails.split(" ")
     end 
     split_emails.map { |email| email.gsub(/\s+/,"")}
   end 
