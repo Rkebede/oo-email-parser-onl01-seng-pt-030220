@@ -15,7 +15,7 @@ class EmailAddressParser
   
   def parse
     split_emails = @emails.split(",")
-    split_emails.map { |email| email.split(" ")}
+    split_emails.map { |email| email.split(" ") }.flatten
     
     # if split_emails.length == 1 
     #   split_emails = @emails.split(" ")
