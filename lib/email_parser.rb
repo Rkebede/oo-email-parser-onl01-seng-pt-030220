@@ -14,10 +14,11 @@ class EmailAddressParser
   end 
   
   def parse
-   split_email = @emails.split(",")
-   if split_email.length == 1 
-    split_email = @email.split(" ")
+    split_email = @emails.split(",")
+    if split_email.length == 1 
+      split_email = @email.split(" ")
     end 
+    split_email
   end 
   
 end 
